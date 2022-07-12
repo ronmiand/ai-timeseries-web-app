@@ -1,0 +1,18 @@
+@relation Lima
+
+@attribute AlumnosMatriculadosPublica numeric
+@attribute AlumnosMatriculadosPrivada numeric
+@attribute PBI numeric
+@attribute DenunciasAgrecionPsicologica numeric
+@attribute DenunciasAgrecionFisica numeric
+@attribute Year date [yyyy]
+
+@data
+3498,2884,200400691,13099,20013,[2013]
+3424,2937,208022491,16284,21228,[2014]
+3434,2946,214469326,15932,23087,[2015]
+3526,2962,220241329,19274,24653,[2016]
+3607,2926,224691974,25137,26181,[2017]
+3602,2978,234445543,35597,35375,[2018]
+3733,2999,240498497,50109,38590,[2019]
+4030,2844,211793982,46347,29877,[2020]
