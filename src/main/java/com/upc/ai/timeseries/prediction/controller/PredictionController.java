@@ -22,7 +22,7 @@ import weka.filters.supervised.attribute.TSLagMaker;
 @RestController
 public class PredictionController {
     @GetMapping( name = "/obtener-predicciones/{departamento}")
-    public ResponseEntity<PrediccionDTO> obtenerPredicciones( @PathVariable String departamento) {
+    public ResponseEntity<PrediccionDTO> obtenerPredicciones( @PathVariable("departamento") String departamento) {
          List<PrediccionDTO> list = null;
 
         return  new ResponseEntity(list, HttpStatus.OK);
