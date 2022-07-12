@@ -1,5 +1,12 @@
 package com.upc.ai.timeseries.prediction.controller;
 
+import com.upc.ai.timeseries.prediction.dto.PrediccionDTO;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
 import java.io.*;
 
 import java.util.List;
@@ -12,7 +19,14 @@ import weka.classifiers.timeseries.WekaForecaster;
 //import weka.classifiers.timeseries.core.TSLagMaker;
 import weka.filters.supervised.attribute.TSLagMaker;
 */
+@RestController
 public class PredictionController {
+    @GetMapping( name = "/obtener-predicciones/{departamento}")
+    public ResponseEntity<PrediccionDTO> obtenerPredicciones( @PathVariable String departamento) {
+         List<PrediccionDTO> list = null;
+
+        return  new ResponseEntity(list, HttpStatus.OK);
+    }
 /*
     public static void main(String[] args) {
         try {
